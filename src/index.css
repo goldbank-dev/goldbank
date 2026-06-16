@@ -1,0 +1,125 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 0%;
+    --foreground: 45 20% 98%;
+
+    --card: 0 0% 3%;
+    --card-foreground: 45 20% 98%;
+
+    --popover: 0 0% 3%;
+    --popover-foreground: 45 20% 98%;
+
+    --primary: 45 100% 50%;
+    --primary-foreground: 0 0% 0%;
+
+    --secondary: 45 20% 10%;
+    --secondary-foreground: 45 100% 50%;
+
+    --muted: 0 0% 10%;
+    --muted-foreground: 45 10% 60%;
+
+    --accent: 45 100% 50%;
+    --accent-foreground: 0 0% 0%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 45 20% 15%;
+    --input: 45 20% 15%;
+    --ring: 45 100% 50%;
+
+    --radius: 1rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border outline-none transition-colors duration-200;
+  }
+
+  body {
+    @apply bg-background text-foreground selection:bg-primary selection:text-primary-foreground antialiased;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+
+  /* Custom Scrollbar */
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+  ::-webkit-scrollbar-track {
+    @apply bg-transparent;
+  }
+  ::-webkit-scrollbar-thumb {
+    @apply bg-white/10 rounded-full hover:bg-white/20 transition-colors;
+  }
+}
+
+@layer components {
+  .glass {
+    @apply bg-black/40 backdrop-blur-xl border border-white/10 shadow-[0_8px_32px_0_rgba(0,0,0,0.37)];
+  }
+
+  .glass-card {
+    @apply relative overflow-hidden bg-neutral-900/40 backdrop-blur-md border border-white/5 rounded-[2rem] transition-all duration-300 hover:border-primary/20 hover:shadow-[0_0_40px_rgba(255,215,0,0.05)];
+  }
+  
+  .gold-gradient {
+    background: linear-gradient(135deg, #FFD700 0%, #B8860B 50%, #FFD700 100%);
+  }
+
+  .gold-text-gradient {
+    @apply bg-clip-text text-transparent gold-gradient;
+  }
+
+  .glow-primary {
+    @apply shadow-[0_0_20px_rgba(255,215,0,0.2)] hover:shadow-[0_0_30px_rgba(255,215,0,0.4)] transition-shadow duration-300;
+  }
+
+  @keyframes infinite-scroll {
+    from { transform: translateX(0); }
+    to { transform: translateX(-50%); }
+  }
+
+  .animate-infinite-scroll {
+    animation: infinite-scroll 40s linear infinite;
+  }
+}
+
+.mesh-gradient {
+  background-color: hsla(0, 0%, 0%, 1);
+  background-image: 
+    radial-gradient(at 0% 0%, hsla(45, 100%, 50%, 0.05) 0px, transparent 50%),
+    radial-gradient(at 100% 0%, hsla(45, 100%, 50%, 0.05) 0px, transparent 50%);
+}
+
+a[href*="lovable.dev"], 
+iframe[src*="lovable.dev"],
+div[style*="Edit with Lovable"],
+.lovable-badge {
+  display: none !important;
+  opacity: 0 !important;
+  visibility: hidden !important;
+  pointer-events: none !important;
+  position: absolute !important;
+  z-index: -9999 !important;
+}
+
+#nprogress .bar {
+  background: #FFD700 !important;
+  height: 3px !important;
+  box-shadow: 0 0 10px rgba(255, 215, 0, 0.7) !important;
+}
+
+#nprogress .peg {
+  box-shadow: 0 0 10px #FFD700, 0 0 5px #FFD700 !important;
+}
+
+#nprogress .spinner-icon {
+  border-top-color: #FFD700 !important;
+  border-left-color: #FFD700 !important;
+}
