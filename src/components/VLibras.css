@@ -1,0 +1,13 @@
+/* Ajustes para não conflitar com shadcn/ui */
+.vlibras-wrapper {
+  position: fixed;
+  z-index: 2147483647; /* Máximo z-index para sobrepor tudo */
+  pointer-events: auto;
+}
+
+/* Esconde em print ou mídia específica se necessário */
+@media print {
+  .vlibras-wrapper {
+    display: none !important;
+  }
+}
