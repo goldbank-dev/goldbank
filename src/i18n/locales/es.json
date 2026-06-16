@@ -1,0 +1,83 @@
+{
+  "common": {
+    "dashboard": "Panel",
+    "wallet": "Billetera",
+    "trade": "Negociar",
+    "settings": "Configuraciones",
+    "admin": "Administración",
+    "logout": "Cerrar sesión",
+    "save": "Guardar",
+    "login": "Entrar",
+    "signup": "Abrir Cuenta",
+    "success": "¡Éxito!",
+    "error": "Error",
+    "loading": "Cargando...",
+    "back": "Volver"
+  },
+  "nav": {
+    "home": "Inicio",
+    "backing": "Respaldo",
+    "about": "Sobre nosotros",
+    "tokenization": "Tokenización",
+    "vipList": "Lista VIP",
+    "clientPanel": "Panel de Clientes",
+    "dashboard": "Dashboard"
+  },
+  "hero": {
+    "badge": "PLATAFORMA CON RESPALDO REAL",
+    "title1": "El Futuro del",
+    "title2": "Oro Digital",
+    "title3": "Está Aquí",
+    "description": "RESERVE SU ACCESO ANTICIPADO EN LA LISTA VIP y participe en la mayor revolución en la tokenización de activos reales.",
+    "cta_vip": "Acceder a la Lista VIP",
+    "cta_explore": "Explorar Ecosistema"
+  },
+  "features": {
+    "badge": "Seguridad y Transparencia",
+    "description": "Utilizamos tecnología blockchain de última generación para garantizar que su inversión esté siempre segura y accesible.",
+    "f1_title": "Respaldo físico 1:1",
+    "f1_desc": "A diferencia de las promesas puramente digitales, cada token representa 1 g de oro físico real bajo custodia.",
+    "f2_title": "Custodia Certificada",
+    "f2_desc": "Almacenado en bóvedas de alta seguridad con auditoría independiente y de nivel institucional.",
+    "f3_title": "Seguro Institucional",
+    "f3_desc": "Todo el inventario físico está cubierto por pólizas de seguro globales ante cualquier eventualidad.",
+    "f4_title": "Auditoría On-Chain",
+    "f4_desc": "Verificación en tiempo real de todas las reservas mediante contratos inteligentes y prueba de reserva.",
+    "f5_title": "Liquidez 24/7",
+    "f5_desc": "Opere con sus activos minerales en cualquier momento, sin ventanas bancarias ni burocracia.",
+    "f6_title": "Ecosistema Global",
+    "f6_desc": "Uniendo la inmutabilidad de la cadena de bloques con la tangibilidad de los activos minerales en un solo lugar."
+  },
+  "vip": {
+    "title": "Lista VIP",
+    "description": "Sea uno de los primeros en acceder a la plataforma y obtenga beneficios exclusivos de lanzamiento, como tarifas reducidas y bonos de bienvenida.",
+    "benefit1": "Acceso anticipado",
+    "benefit2": "Tarifas de trading 0% en el 1er mes",
+    "benefit3": "Invitaciones a eventos exclusivos",
+    "form": {
+      "name": "Nombre Completo",
+      "name_placeholder": "Su nombre",
+      "email": "Correo electrónico",
+      "email_placeholder": "tu@email.com",
+      "phone": "Teléfono (opcional)",
+      "phone_placeholder": "+34 600 000 000",
+      "submit": "RESERVE SU ACCESO ANTICIPADO",
+      "success_title": "¡Éxito!",
+      "success_desc": "Has sido añadido a la lista VIP. Nos pondremos en contacto contigo pronto."
+    }
+  },
+  "eco": {
+    "title": "Ecosistema GTK",
+    "description": "Transformamos lingotes de oro físicos en activos digitales GTK, permitiendo liquidez inmediata y custodia de élite para su patrimonio mineral.",
+    "digital_gold": "GTK Digital Gold",
+    "digital_assets": "Activos Digitales 24/7",
+    "physical_assets": "Physical Assets",
+    "real_backing": "Respaldo Físico Real"
+  },
+  "admin": {
+    "title": "Panel de Administración",
+    "integrations": "Integraciones",
+    "security": "Seguridad",
+    "users": "Usuarios"
+  }
+}

@@ -1,0 +1,83 @@
+{
+  "common": {
+    "dashboard": "Dashboard",
+    "wallet": "Wallet",
+    "trade": "Trade",
+    "settings": "Settings",
+    "admin": "Admin",
+    "logout": "Logout",
+    "save": "Save",
+    "login": "Login",
+    "signup": "Open Account",
+    "success": "Success!",
+    "error": "Error",
+    "loading": "Loading...",
+    "back": "Back"
+  },
+  "nav": {
+    "home": "Home",
+    "backing": "Backing",
+    "about": "About",
+    "tokenization": "Tokenization",
+    "vipList": "VIP List",
+    "clientPanel": "Client Panel",
+    "dashboard": "Dashboard"
+  },
+  "hero": {
+    "badge": "PLATFORM WITH REAL BACKING",
+    "title1": "The Future of",
+    "title2": "Digital Gold",
+    "title3": "Is Here",
+    "description": "RESERVE YOUR EARLY ACCESS ON THE VIP LIST and participate in the greatest revolution in real asset tokenization.",
+    "cta_vip": "Access VIP List",
+    "cta_explore": "Explore Ecosystem"
+  },
+  "features": {
+    "badge": "Security and Transparency",
+    "description": "We use state-of-the-art blockchain technology to ensure your investment is always safe and accessible.",
+    "f1_title": "1:1 Physical Backing",
+    "f1_desc": "Unlike purely digital promises, each token represents 1g of real physical gold in custody.",
+    "f2_title": "Certified Custody",
+    "f2_desc": "Stored in high-security vaults with independent and institutional-level auditing.",
+    "f3_title": "Institutional Insurance",
+    "f3_desc": "All physical stock is covered by global insurance policies against any eventuality.",
+    "f4_title": "On-Chain Auditing",
+    "f4_desc": "Real-time verification of all reserves through smart contracts and proof of reserve.",
+    "f5_title": "24/7 Liquidity",
+    "f5_desc": "Trade your mineral assets at any time, without banking windows or bureaucracy.",
+    "f6_title": "Global Ecosystem",
+    "f6_desc": "Uniting blockchain immutability with the tangibility of mineral assets in one place."
+  },
+  "vip": {
+    "title": "VIP List",
+    "description": "Be one of the first to access the platform and gain exclusive launch benefits, such as reduced fees and welcome bonuses.",
+    "benefit1": "Early access",
+    "benefit2": "0% trade fees in the 1st month",
+    "benefit3": "Invitations to exclusive events",
+    "form": {
+      "name": "Full Name",
+      "name_placeholder": "Your name",
+      "email": "Email",
+      "email_placeholder": "your@email.com",
+      "phone": "Phone (optional)",
+      "phone_placeholder": "+1 (555) 000-0000",
+      "submit": "RESERVE YOUR EARLY ACCESS",
+      "success_title": "Success!",
+      "success_desc": "You have been added to the VIP list. We will contact you soon."
+    }
+  },
+  "eco": {
+    "title": "GTK Ecosystem",
+    "description": "We transform physical gold bars into GTK digital assets, allowing immediate liquidity and elite custody for your mineral heritage.",
+    "digital_gold": "GTK Digital Gold",
+    "digital_assets": "24/7 Digital Assets",
+    "physical_assets": "Physical Assets",
+    "real_backing": "Real Physical Backing"
+  },
+  "admin": {
+    "title": "Admin Panel",
+    "integrations": "Integrations",
+    "security": "Security",
+    "users": "Users"
+  }
+}

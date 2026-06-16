@@ -1,0 +1,83 @@
+{
+  "common": {
+    "dashboard": "Painel",
+    "wallet": "Carteira",
+    "trade": "Negociar",
+    "settings": "Configurações",
+    "admin": "Administração",
+    "logout": "Sair",
+    "save": "Salvar",
+    "login": "Entrar",
+    "signup": "Abrir Conta",
+    "success": "Sucesso!",
+    "error": "Erro",
+    "loading": "Carregando...",
+    "back": "Voltar"
+  },
+  "nav": {
+    "home": "Início",
+    "backing": "Lastro",
+    "about": "Sobre",
+    "tokenization": "Tokenização",
+    "vipList": "Lista VIP",
+    "clientPanel": "Painel do Cliente",
+    "dashboard": "Dashboard"
+  },
+  "hero": {
+    "badge": "PLATAFORMA COM LASTRO REAL",
+    "title1": "O Futuro do",
+    "title2": "Ouro Digital",
+    "title3": "Está Aqui",
+    "description": "RESERVE SEU ACESSO ANTECIPADO NA LISTA VIP e participe da maior revolução na tokenização de ativos reais.",
+    "cta_vip": "Acesse a Lista VIP",
+    "cta_explore": "Explorar Ecossistema"
+  },
+  "features": {
+    "badge": "Segurança e Transparência",
+    "description": "Utilizamos tecnologia blockchain de última geração para garantir que seu investimento esteja sempre seguro e acessível.",
+    "f1_title": "Lastro físico 1:1",
+    "f1_desc": "Diferente de promessas puramente digitais, cada token representa 1g de ouro físico real em custódia.",
+    "f2_title": "Custódia Certificada",
+    "f2_desc": "Armazenado em cofres de alta segurança com auditoria independente e nível institucional.",
+    "f3_title": "Seguro Institucional",
+    "f3_desc": "Todo o estoque físico é coberto por apólices globais de seguro contra qualquer eventualidade.",
+    "f4_title": "Auditoria On-Chain",
+    "f4_desc": "Verificação em tempo real de todas as reservas através de contratos inteligentes e prova de reserva.",
+    "f5_title": "Liquidez 24/7",
+    "f5_desc": "Negocie seus ativos minerais a qualquer momento, sem janelas bancárias ou burocracia.",
+    "f6_title": "Ecossistema Global",
+    "f6_desc": "Unindo a imutabilidade da blockchain com a tangibilidade dos ativos minerais em um só lugar."
+  },
+  "vip": {
+    "title": "Lista VIP",
+    "description": "Seja um dos primeiros a acessar a plataforma e ganhe benefícios exclusivos de lançamento, como taxas reduzidas e bônus de boas-vindas.",
+    "benefit1": "Acesso antecipado",
+    "benefit2": "Taxas de trade 0% no 1º mês",
+    "benefit3": "Convites para eventos exclusivos",
+    "form": {
+      "name": "Nome Completo",
+      "name_placeholder": "Seu nome",
+      "email": "Email",
+      "email_placeholder": "seu@email.com",
+      "phone": "Telefone (opcional)",
+      "phone_placeholder": "(11) 99999-9999",
+      "submit": "RESERVE SEU ACESSO ANTECIPADO",
+      "success_title": "Sucesso!",
+      "success_desc": "Você foi adicionado à lista VIP. Entraremos em contato em breve."
+    }
+  },
+  "eco": {
+    "title": "Ecossistema GTK",
+    "description": "Transformamos barras de ouro físicas em ativos digitais GTK, permitindo liquidez imediata e custódia de elite para seu patrimônio mineral.",
+    "digital_gold": "GTK Digital Gold",
+    "digital_assets": "Ativos Digitais 24/7",
+    "physical_assets": "Physical Assets",
+    "real_backing": "Lastro Físico Real"
+  },
+  "admin": {
+    "title": "Painel Administrativo",
+    "integrations": "Integrações",
+    "security": "Segurança",
+    "users": "Usuários"
+  }
+}
