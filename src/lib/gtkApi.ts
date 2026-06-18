@@ -1,13 +1,19 @@
 import axios from 'axios';
 import { useQuery } from '@tanstack/react-query';
 
-const GTK_API = import.meta.env.VITE_GTK_API_URL || 'https://gtk-api-529742420922.southamerica-east1.run.app';
+// O GTK API é protegido por x-api-key e não libera CORS para o browser.
+// Por isso chamamos via Edge Function (gtk-proxy), que injeta a chave server-side.
+const GTK_PROXY = `${import.meta.env.VITE_SUPABASE_URL}/functions/v1/gtk-proxy`;
+const SUPA_ANON = import.meta.env.VITE_SUPABASE_PUBLISHABLE_KEY;
 
-export const gtkApi = axios.create({
-  baseURL: GTK_API,
-  timeout: 10000,
-  headers: { 'Content-Type': 'application/json' },
-});
+async function gtkGet<T>(path: string): Promise<T> {
+  const { data } = await axios.get<T>(GTK_PROXY, {
+    params: { path },
+    headers: { Authorization: `Bearer ${SUPA_ANON}`, apikey: SUPA_ANON ?? '' },
+    timeout: 10000,
+  });
+  return data as T;
+}
 
 // ─── Types ────────────────────────────────────────────────────────────────────
 
@@ -36,23 +42,19 @@ export interface GTKPrice {
 // ─── API calls ────────────────────────────────────────────────────────────────
 
 export async function getGTKSystemInfo(): Promise<GTKSystemInfo> {
-  const { data } = await gtkApi.get('/api/v1/system/info');
-  return data;
+  return gtkGet<GTKSystemInfo>('/api/v1/system/info');
 }
 
 export async function getGTKBalance(address: string): Promise<GTKBalance> {
-  const { data } = await gtkApi.get(`/api/v1/balance/${address}`);
-  return data;
+  return gtkGet<GTKBalance>(`/api/v1/balance/${address}`);
 }
 
 export async function getGTKPrice(): Promise<GTKPrice> {
-  const { data } = await gtkApi.get('/api/v1/system/price');
-  return data;
+  return gtkGet<GTKPrice>('/api/v1/system/price');
 }
 
 export async function getGTKHealth() {
-  const { data } = await gtkApi.get('/health');
-  return data;
+  return gtkGet('/health');
 }
 
 // ─── React Query hooks ────────────────────────────────────────────────────────
