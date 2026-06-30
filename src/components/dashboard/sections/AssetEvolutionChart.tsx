@@ -30,7 +30,7 @@ const PerformanceChart = React.memo(({ data }: { data: any[] }) => (
       <YAxis hide />
       <Tooltip 
         contentStyle={{ backgroundColor: '#111', border: '1px solid #333', borderRadius: '12px' }}
-        itemStyle={{ color: '#FFD700' }}
+        itemStyle={{ color: '#CC9933' }}
       />
       <Area 
         type="monotone" 

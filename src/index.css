@@ -4,33 +4,34 @@
 
 @layer base {
   :root {
-    --background: 0 0% 0%;
-    --foreground: 45 20% 98%;
+    /* GoldBank palette — navy #00015B + ouro #CC9933 + champagne #FAE48E */
+    --background: 239 90% 7%;
+    --foreground: 48 60% 96%;
 
-    --card: 0 0% 3%;
-    --card-foreground: 45 20% 98%;
+    --card: 239 75% 11%;
+    --card-foreground: 48 60% 96%;
 
-    --popover: 0 0% 3%;
-    --popover-foreground: 45 20% 98%;
+    --popover: 239 75% 11%;
+    --popover-foreground: 48 60% 96%;
 
-    --primary: 45 100% 50%;
-    --primary-foreground: 0 0% 0%;
+    --primary: 40 60% 50%;
+    --primary-foreground: 240 100% 8%;
 
-    --secondary: 45 20% 10%;
-    --secondary-foreground: 45 100% 50%;
+    --secondary: 239 60% 15%;
+    --secondary-foreground: 48 92% 77%;
 
-    --muted: 0 0% 10%;
-    --muted-foreground: 45 10% 60%;
+    --muted: 239 40% 16%;
+    --muted-foreground: 45 30% 72%;
 
-    --accent: 45 100% 50%;
-    --accent-foreground: 0 0% 0%;
+    --accent: 48 92% 77%;
+    --accent-foreground: 240 100% 8%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 45 20% 15%;
-    --input: 45 20% 15%;
-    --ring: 45 100% 50%;
+    --border: 239 50% 20%;
+    --input: 239 50% 20%;
+    --ring: 40 60% 50%;
 
     --radius: 1rem;
   }
@@ -65,11 +66,11 @@
   }
 
   .glass-card {
-    @apply relative overflow-hidden bg-neutral-900/40 backdrop-blur-md border border-white/5 rounded-[2rem] transition-all duration-300 hover:border-primary/20 hover:shadow-[0_0_40px_rgba(255,215,0,0.05)];
+    @apply relative overflow-hidden bg-[#000420]/50 backdrop-blur-md border border-white/5 rounded-[2rem] transition-all duration-300 hover:border-primary/20 hover:shadow-[0_0_40px_rgba(204,153,51,0.08)];
   }
-  
+
   .gold-gradient {
-    background: linear-gradient(135deg, #FFD700 0%, #B8860B 50%, #FFD700 100%);
+    background: linear-gradient(135deg, #FAE48E 0%, #CC9933 50%, #FAE48E 100%);
   }
 
   .gold-text-gradient {
@@ -77,7 +78,7 @@
   }
 
   .glow-primary {
-    @apply shadow-[0_0_20px_rgba(255,215,0,0.2)] hover:shadow-[0_0_30px_rgba(255,215,0,0.4)] transition-shadow duration-300;
+    @apply shadow-[0_0_20px_rgba(204,153,51,0.25)] hover:shadow-[0_0_30px_rgba(204,153,51,0.45)] transition-shadow duration-300;
   }
 
   @keyframes infinite-scroll {
@@ -91,10 +92,10 @@
 }
 
 .mesh-gradient {
-  background-color: hsla(0, 0%, 0%, 1);
-  background-image: 
-    radial-gradient(at 0% 0%, hsla(45, 100%, 50%, 0.05) 0px, transparent 50%),
-    radial-gradient(at 100% 0%, hsla(45, 100%, 50%, 0.05) 0px, transparent 50%);
+  background-color: hsla(239, 90%, 7%, 1);
+  background-image:
+    radial-gradient(at 0% 0%, hsla(40, 60%, 50%, 0.08) 0px, transparent 50%),
+    radial-gradient(at 100% 0%, hsla(48, 92%, 77%, 0.06) 0px, transparent 50%);
 }
 
 a[href*="lovable.dev"], 
@@ -110,16 +111,16 @@ div[style*="Edit with Lovable"],
 }
 
 #nprogress .bar {
-  background: #FFD700 !important;
+  background: #CC9933 !important;
   height: 3px !important;
-  box-shadow: 0 0 10px rgba(255, 215, 0, 0.7) !important;
+  box-shadow: 0 0 10px rgba(204, 153, 51, 0.7) !important;
 }
 
 #nprogress .peg {
-  box-shadow: 0 0 10px #FFD700, 0 0 5px #FFD700 !important;
+  box-shadow: 0 0 10px #CC9933, 0 0 5px #CC9933 !important;
 }
 
 #nprogress .spinner-icon {
-  border-top-color: #FFD700 !important;
-  border-left-color: #FFD700 !important;
+  border-top-color: #CC9933 !important;
+  border-left-color: #CC9933 !important;
 }
