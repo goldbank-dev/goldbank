@@ -9,7 +9,7 @@ interface TransparencySectionProps {
 
 export const TransparencySection = ({ badges }: TransparencySectionProps) => {
   return (
-    <section className="py-24 bg-black relative overflow-hidden" id="seguranca">
+    <section className="py-24 bg-background relative overflow-hidden" id="seguranca">
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full h-px bg-gradient-to-r from-transparent via-primary/50 to-transparent" />
       <div className="container px-4 text-center relative z-10">
         <h2 className="text-3xl md:text-5xl font-bold mb-6">Transparência <span className="text-primary">Total</span></h2>

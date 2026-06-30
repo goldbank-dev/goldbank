@@ -62,10 +62,10 @@ export const Hero = () => {
   }, []);
 
   return (
-    <section className="relative min-h-[100svh] md:min-h-screen flex flex-col items-center justify-center pt-20 md:pt-32 pb-12 md:pb-16 overflow-hidden bg-black">
+    <section className="relative min-h-[100svh] md:min-h-screen flex flex-col items-center justify-center pt-20 md:pt-32 pb-12 md:pb-16 overflow-hidden bg-background">
       {/* Background Media */}
       <div className="absolute inset-0 -z-20 overflow-hidden w-full h-full" aria-hidden="true">
-        <div className="absolute inset-0 bg-gradient-to-b from-black/80 via-black/20 md:via-black/40 to-black/90 z-10" />
+        <div className="absolute inset-0 bg-gradient-to-b from-background/80 via-background/20 md:via-background/40 to-background/90 z-10" />
 
         {/* Placeholder image — always rendered; visible while video is not ready or failed */}
         <img
@@ -215,7 +215,7 @@ export const Hero = () => {
           height={537}
           fetchPriority="high"
           decoding="async"
-          className="relative w-full max-w-[280px] sm:max-w-md md:max-w-2xl h-auto object-cover rounded-2xl shadow-[0_0_60px_rgba(255,215,0,0.3)] border border-primary/30 animate-float"
+          className="relative w-full max-w-[280px] sm:max-w-md md:max-w-2xl h-auto object-cover rounded-2xl shadow-[0_0_60px_rgba(204,153,51,0.3)] border border-primary/30 animate-float"
         />
         <div className="absolute -bottom-4 right-4 md:-bottom-6 md:right-12 glass p-3 md:p-4 rounded-xl border-primary/30 animate-float [animation-delay:1.5s]">
           <p className="text-xs md:text-sm font-bold text-primary">LIVE AUDIT: ACTIVE</p>

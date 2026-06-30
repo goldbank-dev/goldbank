@@ -11,7 +11,7 @@ const Legal = () => {
   const isPrivacy = pathname === "/privacy";
 
   return (
-    <div className="min-h-screen bg-black text-white">
+    <div className="min-h-screen bg-background text-white">
       <SEO 
         title={isPrivacy ? "Política de Privacidade" : "Termos de Uso"} 
         description={isPrivacy ? "Nossa política de privacidade e compromisso com a LGPD." : "Termos e condições de uso da plataforma Gold Bank."}

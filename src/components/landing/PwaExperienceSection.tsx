@@ -8,7 +8,7 @@ interface PwaExperienceSectionProps {
 
 export const PwaExperienceSection = ({ goldTokenization }: PwaExperienceSectionProps) => {
   return (
-    <section className="py-24 bg-black overflow-hidden" id="pwa">
+    <section className="py-24 bg-background overflow-hidden" id="pwa">
       <div className="container px-4">
         <div className="bg-gradient-to-br from-neutral-900 to-black p-8 md:p-16 rounded-[2rem] border border-white/10 relative overflow-hidden group">
           <div className="absolute -top-24 -right-24 w-64 h-64 bg-santek-gold/10 rounded-full blur-[100px] group-hover:bg-santek-gold/20 transition-colors duration-1000" />

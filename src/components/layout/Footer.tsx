@@ -3,7 +3,7 @@ import { Logo } from "@/components/ui/logo";
 
 export const Footer = () => {
   return (
-    <footer className="py-12 border-t border-white/5 bg-black">
+    <footer className="py-12 border-t border-white/5 bg-background">
       <div className="container px-4">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
           <div className="col-span-1 md:col-span-2">

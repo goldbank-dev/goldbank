@@ -176,7 +176,7 @@ export const DashboardLayout = ({ children }: DashboardLayoutProps) => {
   );
 
   return (
-    <div className="min-h-screen bg-black text-white flex">
+    <div className="min-h-screen bg-background text-white flex">
       <BreadcrumbSEO />
 
       {/* Desktop Sidebar */}
